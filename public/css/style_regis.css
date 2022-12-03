@@ -1,0 +1,55 @@
+/* .logo{
+    float: right;
+    margin-top: 150px;  
+} */
+/* body{
+  background-color:aqua;
+} */
+body{
+    background-color: #ECB390;
+}
+.email{
+    width: 500px;
+    background-color: white;
+    height: 60px;
+}
+.username{
+    width: 500px;
+    background-color: white;
+    height: 60px;
+}
+.pass{
+    width: 500px;
+    background-color: white;
+    height: 60px;
+}
+.form-control{
+    color: white;
+}
+
+.allbox{
+    padding-top: 100px;
+    margin-left: 500px;
+    /* margin: 0 auto; */
+    position: absolute;
+}
+.allbox h1{
+    font-size: 55px;
+}
+.allbox p{
+    font-size: 25px;
+}
+.form-label{
+    font-size: 30px;
+}
+.btn{
+    width: 500px;
+    height: 60px;
+    background-color: #E9D5CA;
+    color: black;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.btn:hover{
+    color: white;
+}
