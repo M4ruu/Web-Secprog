@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Gambar;
+
 
 class fileuploadController extends Controller
 {
@@ -14,20 +16,13 @@ class fileuploadController extends Controller
     function upload(Request $request)
     {
         $request->validate([
-            'file' => 'required|mimes:csv,txt,xlx,xls,pdf,jpg|max:2048'
+            'file' => 'required|image|max:2048'
         ]);
-        //storefiletodatabase
-        $fileModel = new fileuploadController;
-        if ($request->file()) {
-            $fileName = time() . '_' . $request->file->getClientOriginalName();
-            $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
-            $fileModel->name = time() . '_' . $request->file->getClientOriginalName();
-            $fileModel->file_path = '/Storage/app/secprogdb' . $filePath;
-            $fileModel->save();
-            return back()
-                ->with('success', 'Filehasbeenuploaded.')
-                ->with('file', $fileName);
-        }
-
+        Gambar::create([
+            'image' => $request->file->store('images', 'public')
+        ]);
+        return back()
+            ->with('success', 'You have successfully upload image.')
+            ->with('image', $request->file->getClientOriginalName());
     }
 }
