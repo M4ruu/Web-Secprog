@@ -24,6 +24,8 @@
     <form action="{{ route('file.upload') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <input type="file" name="file" id="file">
+        {{-- textarea --}}
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
         <button type="submit">Upload</button>
     </form>
 

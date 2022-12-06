@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Validator;
 use Illuminate\Http\Request;
 use App\Models\Gambar;
 
@@ -18,6 +19,9 @@ class fileuploadController extends Controller
         $request->validate([
             'file' => 'required|image|max:2048'
         ]);
+        // $request->validate([
+        //     'keterangan' => 'required|string|max:255'
+        // ]);
         Gambar::create([
             'image' => $request->file->store('images', 'public')
         ]);
@@ -25,4 +29,5 @@ class fileuploadController extends Controller
             ->with('success', 'You have successfully upload image.')
             ->with('image', $request->file->getClientOriginalName());
     }
+
 }
