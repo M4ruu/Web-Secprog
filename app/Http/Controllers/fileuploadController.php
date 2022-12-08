@@ -12,7 +12,13 @@ class fileuploadController extends Controller
     //
     function index()
     {
-        return view('upload');
+        //checkifuserislogin
+        if (auth()->user()) {
+            return view('upload');
+        }
+        else {
+            return redirect('/login');
+        }
     }
     function upload(Request $request)
     {

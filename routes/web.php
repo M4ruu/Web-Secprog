@@ -35,6 +35,10 @@ Route::get('/fileupload', function () {
     return view('/fileupload');
 });
 
+Route::get('/', function () {
+    return view('/dashboard');
+});
+
 //routetouploadpage
 Route::get('/upload', [fileuploadController::class, 'index']);
 
