@@ -44,7 +44,7 @@
             <div class="text-center">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/images/yeezy.jpg" class="d-block w-100" alt="..." class="text-center">
+                        <img src="/images/panda.jpg" class="d-block w-100" alt="..." class="text-center">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Adidas Yeezy Boost 350 V2 Slate</h5>
                         <p>Some representative placeholder content for the first slide.</p>
@@ -54,26 +54,25 @@
                         <img src="/images/panda.jpg" class="d-block w-100" alt="..." class="text-center">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Nike Dunk Low White Black 2021</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <p>Release Date: 14 January 2022.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/traviss.jpg" class="d-block w-100" alt="..." class="text-center">
+                        <img src="/images/panda.jpg" class="d-block w-100" alt="..." class="text-center">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Jordan 1 Low Fragment x Travis Scott</h5>
                         <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden"
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">
-
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
