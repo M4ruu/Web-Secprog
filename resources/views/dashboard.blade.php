@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: rgb(162, 57, 186);">
+    <nav class="navbar navbar-expand-lg" style="background-color:  rgb(151, 222, 206);">
         <div class="container-fluid">
           {{-- <a class="navbar-brand" href="">Navbar</a> --}}
           <img src="/images/logofinal.png" alt="">
@@ -32,34 +32,30 @@
         </div>
       </nav>
       {{-- Caraousel  --}}
-      <div class="textop">
-        <h3>Top 10 Sneakers in December 2022</h3>
-      </div>
+      
       <div class="slider">
+        <div class="textop">
+          <h3>Top 10 Sneakers in December 2022</h3>
+        </div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
             <div class="text-center">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/images/panda.jpg" class="d-block w-100" alt="..." class="text-center">
+                        <img src="/images/yeezy2.png" class="d-block w-50 mx-auto" alt="..." class="text-center">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Air Jordan 1 High OG Lost and Found</h5>
                         <p>Release Date: 19 November 2022.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/panda.jpg" class="d-block w-100" alt="..." class="text-center">
+                        <img src="/images/yeezy2.png" class="d-block w-50 h-10 mx-auto" alt="..." class="text-center">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Nike Dunk Low White Black 2021</h5>
                         <p>Release Date: 14 January 2021.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/panda.jpg" class="d-block w-100" alt="..." class="text-center">
+                        <img src="/images/travis2.png" class="d-block w-50 mx-auto" alt="..." class="text-center">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Jordan 1 Low Fragment x Travis Scott</h5>
                         <p>Some representative placeholder content for the third slide.</p>
@@ -75,8 +71,19 @@
                       <span class="visually-hidden">
             </div>
       </div>
+    </div>
     </body>
     <footer>
-      
+      <div class="leftfooter">
+        {{-- <img src="/images/logofinal.png" alt="" id="gambar1"> --}}
+        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odit suscipit reprehenderit minima non laborum unde nemo dolore dignissimos aut, voluptatibus dolorem exercitationem incidunt, provident ipsam accusantium totam quidem consequatur?</h5>
+        <p>&copy;Copyright Ushoes</p>
+      </div>
+
+      <div class="rightfooter">
+        <a href="https://www.instagram.com/ushoes__/"><img src="/images/ig.png" alt="" ></a>
+        <a href="https://www.facebook.com/ushoes.id/"><img src="/images/fb.png" alt="" ></a>
+    </div>
+    
     </footer>
 </html>

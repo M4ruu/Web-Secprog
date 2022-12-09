@@ -2,6 +2,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.slider{
+    padding-bottom: 3rem;
+    background-color:rgb(203, 237, 213);
+}
+
 .textop h3{
     padding-top: 1rem;
     text-align: center;
@@ -14,8 +19,56 @@ body{
 
 .carousel-inner p{
     color: black;
+
 }
 
 .carousel-inner h5{
     color: black;
+}
+
+.carousel-caption{
+    position: absolute;
+    bottom: -20px;
+}
+
+
+footer{
+    display: flex;
+    background-color: rgb(151, 222, 206);
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.leftfooter{
+    /* display: flex; */
+}
+
+.leftfooter h5{
+    font-size: 1rem;
+    color: black;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.leftfooter p{
+    font-size: 0.8rem;
+    color: black;
+    padding-left: 1rem;
+}
+
+.leftfooter img{
+    width: 8rem;
+    text-align: left;
+}
+
+.rightfooter{
+    display: flex;
+    gap: 1rem;
+}
+
+.rightfooter img{
+    width: 3rem;
+    text-align: right;
+
 }
