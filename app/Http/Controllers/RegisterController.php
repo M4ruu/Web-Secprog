@@ -18,7 +18,7 @@
          $validatedData = $request->validate([
              'name' => 'required|max:255',
              'email' => 'required|unique:users',
-             'password' => 'required',
+             'password' => 'required|min:6',
          ]);
   
          $validatedData['password'] = Hash::make($validatedData['password']);
