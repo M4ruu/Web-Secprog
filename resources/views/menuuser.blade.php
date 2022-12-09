@@ -29,8 +29,9 @@
               </li>
                 <li class="nav-item">
                     <a href="{{route('actionlogout')}}">
-                        <button class="button-sign-out"><i style="font-size:24px" class="fa">&#xf08b;</i></button>
-                    </a>
+                        <!-- <button class="button-sign-out"><i style="font-size:24px" class="fa">&#xf08b;</i></button> -->
+                      LogOut
+                      </a>
             </ul>
           </div>
         </div>
