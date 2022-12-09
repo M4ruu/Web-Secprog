@@ -27,11 +27,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="/upload">Upload Pendapat </a>
               </li>
-                <li class="nav-item">
-                    <a href="{{route('actionlogout')}}">
-                        <!-- <button class="button-sign-out"><i style="font-size:24px" class="fa">&#xf08b;</i></button> -->
-                      LogOut
-                      </a>
+              <li>
+                <a class="nav-link" href="{{route('actionlogout')}}">Logout</a>
+              </li>
             </ul>
           </div>
         </div>
