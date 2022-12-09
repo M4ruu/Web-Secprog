@@ -26,6 +26,6 @@
     <textarea name="body" id="" cols="30" rows="5"></textarea>
     <button type="submit">send</button>
 </form>
-<a href="home">BackToHome</a>
+<a href="menuuser">Back To Menu</a>
 </body>
 </html>

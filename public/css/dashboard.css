@@ -2,6 +2,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.textop h3{
+    padding-top: 1rem;
+    text-align: center;
+}
+
 .container-fluid img{
     width: 4rem;
     height: 4rem;

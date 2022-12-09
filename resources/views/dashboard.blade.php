@@ -32,6 +32,9 @@
         </div>
       </nav>
       {{-- Caraousel  --}}
+      <div class="textop">
+        <h3>Top 10 Sneakers in December 2022</h3>
+      </div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,10 +44,10 @@
             <div class="text-center">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/images/yeezy.jpg" class="d-block w-100" alt="..." class="text-center">
+                        <img src="/images/panda.jpg" class="d-block w-100" alt="..." class="text-center">
                         <div class="carousel-caption d-none d-md-block">
-                        <h5>Adidas Yeezy Boost 350 V2 Slate</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Air Jordan 1 High OG Lost and Found</h5>
+                        <p>Release Date: 19 November 2022.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -55,7 +58,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/traviss.jpg" class="d-block w-100" alt="..." class="text-center">
+                        <img src="/images/panda.jpg" class="d-block w-100" alt="..." class="text-center">
                         <div class="carousel-caption d-none d-md-block">
                         <h5>Jordan 1 Low Fragment x Travis Scott</h5>
                         <p>Some representative placeholder content for the third slide.</p>
