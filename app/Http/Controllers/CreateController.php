@@ -24,4 +24,16 @@ class CreateController extends Controller
             'title' => 'required|min:5|max:255'
         ]);
     }
+    //validationcontent
+    function validateContent(Request $request)
+    {
+        $request->validate([
+            'body' => 'required|min:5|max:255'
+        ]);
+    }
+    //htmlescapevalidation
+    function escapeHtml($string)
+    {
+        return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+    }
 }

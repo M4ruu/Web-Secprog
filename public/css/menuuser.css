@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.carousel-inner p{
+    color: black;
+}
+
+.carousel-inner h5{
+    color: black;
+}

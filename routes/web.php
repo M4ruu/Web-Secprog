@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MenuuserController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
@@ -29,9 +30,13 @@ use GuzzleHttp\Promise\Create;
 //     return view('home');
 // });
 
+//routemenuuser
+Route::get('/menuuser', function () {
+    return view('/menuuser');
+});
 
-Route::get('/test_register', function () {
-    return view('/test_register');
+Route::get('/register', function () {
+    return view('/register');
 });
 
 Route::get('/fileupload', function () {
@@ -44,6 +49,8 @@ Route::get('/', function () {
 
 //routetouploadpage
 Route::get('/upload', [fileuploadController::class, 'index']);
+
+// Route::get('/menuuser',[MenuuserController::class, 'index']);
 
 
 //routefileupload
@@ -58,11 +65,17 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 
 
-Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+// Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+// Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
+
+//routemenuuser
+Route::get('menuuser', [HomeController::class, 'index'])->name('menuuser')->middleware('auth');
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 //routecreate
 Route::get('/create', [CreateController::class, 'index']);
+Route::post('/create', [CreateController::class, 'validateTitle']);
+
 
 Route::post('/create', function(){
     Article::create([

@@ -12,7 +12,7 @@ class LoginController extends Controller
     public function login()
     {
         if (Auth::check()) {
-            return redirect('home');
+            return redirect('menuuser');
         }else{
             return view('login');
         }
@@ -26,10 +26,10 @@ class LoginController extends Controller
         ];
 
         if (Auth::Attempt($data)) {
-            return redirect('home');
+            return redirect('menuuser');
         }else{
             Session::flash('Error', 'Email or Password Invalid');
-            return redirect('/');
+            return redirect('login');
         }
     }
 
