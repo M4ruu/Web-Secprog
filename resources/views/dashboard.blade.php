@@ -75,9 +75,8 @@
     </body>
     <footer>
       <div class="leftfooter">
-        {{-- <img src="/images/logofinal.png" alt="" id="gambar1"> --}}
-        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odit suscipit reprehenderit minima non laborum unde nemo dolore dignissimos aut, voluptatibus dolorem exercitationem incidunt, provident ipsam accusantium totam quidem consequatur?</h5>
-        <p>&copy;Copyright Ushoes</p>
+        <h4>About Us</h4>
+        <img src="/images/logofinal.png" alt="" id="gambar1">
       </div>
 
       <div class="rightfooter">
