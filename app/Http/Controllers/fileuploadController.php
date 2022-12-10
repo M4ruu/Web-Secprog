@@ -25,7 +25,17 @@ class fileuploadController extends Controller
     //     $uid = session()->put('uid', $uid);
     //     return $uid;
     // }
+        //getuidloggedinuser
+    function getuid(){
+        $uid = Auth::user()->id;
+        return $uid;
+    }
 
+    //storeuid
+    function storeuid(Request $request){
+        $uid = Auth::user()->id;
+        return $uid;
+    }
 
     function index()
     {
