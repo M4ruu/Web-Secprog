@@ -28,7 +28,7 @@
                 <a class="nav-link" href="/upload">Upload Pendapat </a>
               </li>
               <li>
-                <a class="nav-link" href="/editprofile">Profile</a>
+                <a class="nav-link" href="/editprofile">Content</a>
               </li>
               <li>
                 <a class="nav-link" href="{{route('actionlogout')}}">Logout</a>
