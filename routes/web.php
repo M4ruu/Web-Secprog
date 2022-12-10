@@ -30,6 +30,16 @@ use GuzzleHttp\Promise\Create;
 //     return view('home');
 // });
 
+//routetest
+Route::get('/test', function () {
+    return view('test');
+});
+
+//routeeditprofile
+Route::get('/editprofile', function () {
+    return view('editprofile');
+});
+
 //routemenuuser
 Route::get('/menuuser', function () {
     return view('/menuuser');
