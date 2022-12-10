@@ -18,8 +18,10 @@
         </ul>
     </div>
     @endif
-    <div class="head">
-        <a href="menuuser">Back To Menu</a>
+    <div>
+        <button type="submit" class="head">
+            <a href="menuuser">Back To Home</a>
+        </button>
     </div>
     
 <form action="/create" method="POST">

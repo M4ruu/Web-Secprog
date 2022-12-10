@@ -22,8 +22,10 @@
     @endif
 </head>
 <body>
-    <div class="head">
-        <a href="menuuser">Back To Home</a>
+    <div>
+        <button type="submit" class="head">
+            <a href="menuuser">Back To Home</a>
+        </button>
     </div>
     
     <form action="{{ route('file.upload') }}" method="POST" enctype="multipart/form-data">
@@ -36,7 +38,7 @@
         <h2>Masukan keterangan berupa nama sepatu</h2>
         <textarea name="keterangan" id="keterangan" cols="30" rows="10"></textarea>
         <button type="submit">Upload</button>
-        
+
         
     </form>
 
