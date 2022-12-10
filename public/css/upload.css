@@ -2,6 +2,11 @@ body{
     padding: 0;
     margin: 0;
 }
+
+.head{
+    background-color: rgb(203, 237, 213);
+}
+
 .head a{
     text-decoration: none;
     background-color: rgb(203, 237, 213);
