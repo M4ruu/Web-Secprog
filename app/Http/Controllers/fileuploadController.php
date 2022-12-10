@@ -6,36 +6,16 @@ use Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Gambar;
+//usesession
+use Illuminate\Support\Facades\Session;
+
 
 
 
 
 class fileuploadController extends Controller
 {
-
-    // function uid(){
-    //     $uid = uniqid();    
-    //     $uid = session()->put('uid', $uid);
-    //     return $uid;
-    // }
-
-    // //storeuid
-    // function storeuid(Request $request){
-    //     $uid = uniqid(); 
-    //     $uid = session()->put('uid', $uid);
-    //     return $uid;
-    // }
-        //getuidloggedinuser
-    function getuid(){
-        $uid = Auth::user()->id;
-        return $uid;
-    }
-
-    //storeuid
-    function storeuid(Request $request){
-        $uid = Auth::user()->id;
-        return $uid;
-    }
+    //getemailsession
 
     function index()
     {
@@ -49,16 +29,18 @@ class fileuploadController extends Controller
     }
     function upload(Request $request)
     {
+        // dd($request);
         $request->validate([
             'file' => 'required|image|max:2048'
         ]);
-        Gambar::create([
+        Gambar::create([    
             'image' => $request->file->store('images', 'public'),
             'keterangan' => request('keterangan'),
+            'email' => request('email')
+            
         ]);
         return back()
             ->with('success', 'You have successfully upload image.')
             ->with('image', $request->file->getClientOriginalName());
     }
-
 }
