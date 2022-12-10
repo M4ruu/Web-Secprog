@@ -26,7 +26,8 @@ class fileuploadController extends Controller
             'file' => 'required|image|max:2048'
         ]);
         Gambar::create([
-            'image' => $request->file->store('images', 'public')
+            'image' => $request->file->store('images', 'public'),
+            'keterangan' => request('keterangan')
         ]);
         return back()
             ->with('success', 'You have successfully upload image.')

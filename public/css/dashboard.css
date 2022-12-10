@@ -36,12 +36,22 @@ footer{
     display: flex;
     background-color: rgb(151, 222, 206);
     padding: 1rem;
-    justify-content: space-between;
-    gap: 10rem;
+    padding-left: 50%;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
 }
 
-.leftfooter{
-    /* display: flex; */
+.leftfooter img{
+    width: 10rem;
+}
+
+.rightfooter img{
+    width: 3rem;
+}
+
+/* .leftfooter{
+    display: flex;
 }
 
 .leftfooter h5{
@@ -71,4 +81,4 @@ footer{
     width: 3rem;
     text-align: right;
 
-}
+} */

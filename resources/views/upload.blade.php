@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Upload Your File</title>
+    <link rel="stylesheet" href="../css/upload.css">
     @if($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -21,14 +22,24 @@
     @endif
 </head>
 <body>
+    <div class="head">
+        <a href="menuuser">Back To Home</a>
+    </div>
+    
     <form action="{{ route('file.upload') }}" method="POST" enctype="multipart/form-data">
+        <h2>Masukan file berupa gambar sneaker yang 
+            ingin dimasukan sebagai kandidat Top Month Selanjutnya
+        </h2>
         @csrf
         <input type="file" name="file" id="file">
         {{-- textarea --}}
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <h2>Masukan keterangan berupa nama sepatu</h2>
+        <textarea name="keterangan" id="keterangan" cols="30" rows="10"></textarea>
         <button type="submit">Upload</button>
+
+        
     </form>
 
-    <a href="menuuser">Backtmenuuser</a>
+    
 </body>
 </html>
