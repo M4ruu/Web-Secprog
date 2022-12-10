@@ -76,7 +76,7 @@
     <footer>
       <div class="leftfooter">
         <h4>About Us</h4>
-        <img src="/images/logofinal.png" alt="" id="gambar1">
+        <img src="/images/logomantap.png" alt="" id="gambar1">
       </div>
 
       <div class="rightfooter">

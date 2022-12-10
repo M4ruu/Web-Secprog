@@ -36,49 +36,17 @@ footer{
     display: flex;
     background-color: rgb(151, 222, 206);
     padding: 1rem;
-    padding-left: 50%;
+    padding-left: 46%;
     justify-content: center;
     flex-direction: column;
     bottom: 0;
 }
 
 .leftfooter img{
-    width: 10rem;
+    width: 6rem;
 }
 
 .rightfooter img{
     width: 3rem;
 }
 
-/* .leftfooter{
-    display: flex;
-}
-
-.leftfooter h5{
-    font-size: 1rem;
-    color: black;
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-
-.leftfooter p{
-    font-size: 0.8rem;
-    color: black;
-    padding-left: 1rem;
-}
-
-.leftfooter img{
-    width: 8rem;
-    text-align: left;
-}
-
-.rightfooter{
-    display: flex;
-    gap: 1rem;
-}
-
-.rightfooter img{
-    width: 3rem;
-    text-align: right;
-
-} */
