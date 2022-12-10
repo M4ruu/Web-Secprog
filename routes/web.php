@@ -47,6 +47,10 @@ Route::get('/', function () {
     return view('/dashboard');
 });
 
+Route::get('/editprofile', function () {
+    return view('/editprofile');
+});
+
 //routetouploadpage
 Route::get('/upload', [fileuploadController::class, 'index']);
 
