@@ -9,14 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    {{-- <button type="button" class="btn btn-outline-secondary">
+    <button type="button" class="head">
         <a href="menuuser">Back To Home</a>
-    </button> --}}
-    {{-- <div>
-        <button type="submit" class="head">
-            <a href="menuuser">Back To Home</a>
-        </button>
-    </div> --}}
+    </button> 
+    <br>
     <br>
     {{-- make table for show picture in database --}}
     <table>

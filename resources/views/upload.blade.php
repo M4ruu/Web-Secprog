@@ -37,6 +37,7 @@
         {{-- textarea --}}
         <h2>Masukan keterangan berupa nama sepatu</h2>
         <textarea name="keterangan" id="keterangan" cols="30" rows="10"></textarea>
+        
         <button type="submit">Upload</button>
 
         
