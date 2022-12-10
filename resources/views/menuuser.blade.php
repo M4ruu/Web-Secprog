@@ -25,10 +25,10 @@
                 <a class="nav-link" href="/create">Kritik Dan Saran</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/upload">Upload Pendapat </a>
+                <a class="nav-link" href="/upload">Upload Content Pendapat </a>
               </li>
               <li>
-                <a class="nav-link" href="/editprofile">Content</a>
+                <a class="nav-link" href="/editprofile">List Content</a>
               </li>
               <li>
                 <a class="nav-link" href="{{route('actionlogout')}}">Logout</a>
