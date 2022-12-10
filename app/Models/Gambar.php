@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Gambar extends Model
 {
     use HasFactory;
-    protected $fillable = ['image','keterangan'];
+    protected $fillable = ['image','keterangan','uid'];
 }

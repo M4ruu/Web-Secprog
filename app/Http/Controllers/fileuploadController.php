@@ -4,13 +4,29 @@ namespace App\Http\Controllers;
 
 use Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Gambar;
-use Auth;
+
+
 
 
 class fileuploadController extends Controller
 {
-    //
+
+    // function uid(){
+    //     $uid = uniqid();    
+    //     $uid = session()->put('uid', $uid);
+    //     return $uid;
+    // }
+
+    // //storeuid
+    // function storeuid(Request $request){
+    //     $uid = uniqid(); 
+    //     $uid = session()->put('uid', $uid);
+    //     return $uid;
+    // }
+
+
     function index()
     {
         //checkifuserislogin

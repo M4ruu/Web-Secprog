@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('gambars', function (Blueprint $table) {
             $table->id();
+            $table->string('uid');
             $table->timestamps();
             $table->string('image')->nullable();
             $table->string('keterangan')->nullable();
