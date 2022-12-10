@@ -2,6 +2,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.slider{
+    text-align: center;
+}
+
 .container-fluid img{
     width: 4rem;
     height: 4rem;
@@ -13,4 +17,22 @@ body{
 
 .carousel-inner h5{
     color: black;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(151, 222, 206);
+    padding: 1rem;
+    padding-left: 46%;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+.leftfooter img{
+    width: 6rem;
+}
+
+.rightfooter img{
+    width: 3rem;
 }
