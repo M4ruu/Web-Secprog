@@ -6,8 +6,10 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\fileuploadController;
 use App\Http\Controllers\CreateController;
+use App\Http\Controllers\EditprofileController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Article;
+use App\Models\Gambar;
 use GuzzleHttp\Promise\Create;
 
 /*
@@ -36,9 +38,11 @@ Route::get('/test', function () {
 });
 
 //routeeditprofile
-Route::get('/editprofile', function () {
-    return view('editprofile');
-});
+// Route::get('/editprofile', function () {
+//     return view('editprofile');
+// });
+
+Route::get('/editprofile', [EditprofileController::class, 'index']);
 
 //routemenuuser
 Route::get('/menuuser', function () {
@@ -57,9 +61,9 @@ Route::get('/', function () {
     return view('/dashboard');
 });
 
-Route::get('/editprofile', function () {
-    return view('/editprofile');
-});
+// Route::get('/editprofile', function () {
+//     return view('/editprofile');
+// });
 
 //routetouploadpage
 Route::get('/upload', [fileuploadController::class, 'index']);
@@ -98,4 +102,20 @@ Route::post('/create', function(){
     ]);
     return redirect('/create');
     
+});
+
+Route::get('/editketerangan/{id}', [EditprofileController::class, 'edit']);
+
+// Route::post('/editketerangan/{id}', function($id){
+//     $gambar = Gambar::find($id);
+//     $gambar->keterangan = request('keterangan');
+//     $gambar->save();
+//     return redirect('/editprofile');
+// });
+
+Route::post('/editketerangan/{id}',[EditprofileController::class, 'update']);
+
+Route::get('/deleteitem/{id}', function($id){
+    Gambar::find($id)->delete();
+    return redirect('/editprofile');
 });
