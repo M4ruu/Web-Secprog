@@ -17,7 +17,6 @@
         </tr>
         @foreach ($data as $item)
         <tr>
-            {{-- <td><img src="{{asset('storage/app/public'.$item->image)}}" alt="" width="100px" height="100px"></td> --}}
             <td><img src="{{asset('storage/'.$item->image)}}" alt="" width="100px" height="100px"></td>
             <td>{{$item->keterangan}}</td>
             <td>{{$item->email}}</td>
