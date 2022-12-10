@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Validator;
 use Illuminate\Http\Request;
 use App\Models\Gambar;
+use Auth;
 
 
 class fileuploadController extends Controller
@@ -27,7 +28,7 @@ class fileuploadController extends Controller
         ]);
         Gambar::create([
             'image' => $request->file->store('images', 'public'),
-            'keterangan' => request('keterangan')
+            'keterangan' => request('keterangan'),
         ]);
         return back()
             ->with('success', 'You have successfully upload image.')
