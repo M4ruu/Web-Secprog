@@ -32,6 +32,8 @@ class fileuploadController extends Controller
         // dd($request);
         $request->validate([
             'file' => 'required|image|max:2048'
+        //validateketerangan
+
         ]);
         Gambar::create([    
             'image' => $request->file->store('images', 'public'),

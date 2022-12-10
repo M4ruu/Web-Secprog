@@ -95,14 +95,14 @@ Route::get('/create', [CreateController::class, 'index']);
 Route::post('/create', [CreateController::class, 'validateTitle']);
 
 
-Route::post('/create', function(){
-    Article::create([
-        'title' => request('title'),
-        'body' => request('body')
-    ]);
-    return redirect('/create');
+// Route::post('/create', function(){
+//     Article::create([
+//         'title' => request('title'),
+//         'body' => request('body')
+//     ]);
+//     return redirect('/create');
     
-});
+// });
 
 Route::get('/editketerangan/{id}', [EditprofileController::class, 'edit']);
 

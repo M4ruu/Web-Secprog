@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
 
 class CreateController extends Controller
 {
@@ -21,15 +22,15 @@ class CreateController extends Controller
     function validateTitle(Request $request)
     {
         $request->validate([
-            'title' => 'required|min:5|max:255'
+            'title' => 'required|min:5|max:255',
+            'body' => 'required|min:5|max:255',
         ]);
-    }
-    //validationcontent
-    function validateContent(Request $request)
-    {
-        $request->validate([
-            'body' => 'required|min:5|max:255'
+
+        Article::create([
+            'title' => request('title'),
+            'body' => request('body')
         ]);
+        return redirect('/create');
     }
     //htmlescapevalidation
     function escapeHtml($string)
