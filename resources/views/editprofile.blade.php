@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile Content</title>
     <link rel="stylesheet" href="../css/editprofile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <div>
+    {{-- <button type="button" class="btn btn-outline-secondary">
+        <a href="menuuser">Back To Home</a>
+    </button> --}}
+    {{-- <div>
         <button type="submit" class="head">
             <a href="menuuser">Back To Home</a>
         </button>
-    </div>
+    </div> --}}
     <br>
     {{-- make table for show picture in database --}}
     <table>
